@@ -69,7 +69,7 @@ def close_popups() -> None:
 def init_driver():
     opts = webdriver.ChromeOptions()
     opts.add_argument("--force-device-scale-factor=1")
-    opts.add_argument("--window-size=1000,1350")
+    opts.add_argument("--window-size=1280,800")
     opts.add_argument("--disable-pdf-viewer")
     return helium.start_chrome(headless=False, options=opts)
 
