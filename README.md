@@ -28,4 +28,3 @@ Create a `.env` file with your API keys:
 ```
 OPENAI_API_KEY=your_key_here
 ```
-
