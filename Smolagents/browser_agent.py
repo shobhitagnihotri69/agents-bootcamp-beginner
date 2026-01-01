@@ -81,7 +81,7 @@ def init_agent(model):
         additional_authorized_imports=["helium"],
         step_callbacks=[save_screenshot],
         max_steps=25,
-        verbosity_level=1,
+        verbosity_level=2,
     )
 
 
