@@ -32,7 +32,7 @@ def save_screenshot(step: ActionStep, agent: CodeAgent) -> None:
     if driver is None:
         return
     for prev in agent.memory.steps:
-        if isinstance(prev, ActionStep) and prev.step_number <= step.step_number - 2:
+        if isinstance(prev, ActionStep) and prev.step_number <= step.step_number - 1:
             prev.observations_images = None
     img = Image.open(BytesIO(driver.get_screenshot_as_png()))
     step.observations_images = [img.copy()]
