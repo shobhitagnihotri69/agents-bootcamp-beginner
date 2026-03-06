@@ -27,7 +27,7 @@ def parse_args():
 
 
 def save_screenshot(step: ActionStep, agent: CodeAgent) -> None:
-    sleep(0.5)
+    sleep(1.5)
     driver = helium.get_driver()
     if driver is None:
         return
