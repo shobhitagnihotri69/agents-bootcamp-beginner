@@ -16,7 +16,7 @@ def make_agent(role: str, goal: str, backstory: str, tools: list = None, llm=Non
         backstory=backstory,
         tools=tools or [],
         llm=llm,
-        verbose=False,
+        verbose=True,
         allow_delegation=False,
     )
 
