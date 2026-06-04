@@ -12,7 +12,7 @@ def build_graph(state_schema: type, nodes: dict, edges: list, entry: str):
         graph.add_node(name, fn)
     graph.set_entry_point(entry)
     for src, dst in edges:
-        if dst == "END":
+        if dst == "end":
             graph.add_edge(src, END)
         else:
             graph.add_edge(src, dst)
