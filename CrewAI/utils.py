@@ -5,7 +5,7 @@ Shared utilities for CrewAI projects.
 from crewai import Agent, Task, Crew, Process
 
 
-def build_crew(agents: list, tasks: list, verbose: bool = True, process=Process.hierarchical) -> Crew:
+def build_crew(agents: list, tasks: list, verbose: bool = True, process=Process.sequential) -> Crew:
     return Crew(agents=agents, tasks=tasks, verbose=verbose, process=process)
 
 
