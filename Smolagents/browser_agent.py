@@ -22,7 +22,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Browser agent using Smolagents")
     parser.add_argument("prompt", nargs="?", default=DEFAULT_PROMPT)
     parser.add_argument("--model-type", default="LiteLLMModel")
-    parser.add_argument("--model-id",   default="gpt-4o")
+    parser.add_argument("--model-id",   default="gpt-4o-mini")
     return parser.parse_args()
 
 
