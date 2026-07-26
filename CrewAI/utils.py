@@ -21,5 +21,5 @@ def make_agent(role: str, goal: str, backstory: str, tools: list = None, llm=Non
     )
 
 
-def make_task(description: str, agent: Agent, expected_output: str = "A detailed report") -> Task:
+def make_task(description: str, agent: Agent, expected_output: str = "A comprehensive summary") -> Task:
     return Task(description=description, agent=agent, expected_output=expected_output)
